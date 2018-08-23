@@ -29,7 +29,7 @@ import org.openqa.selenium.WebDriver
 WebDriver driver = DriverFactory.getWebDriver();
 
 WebUI.click(findTestObject("Login/input_btn"), FailureHandling.STOP_ON_FAILURE)
-
+//hola hola
 String ms1 = "El campo correo electrónico es obligatorio."
 String ms2 = "El campo contraseña es obligatorio."
 WebUI.verifyMatch(ms1, driver.findElement(By.xpath("//ul/li[1]")).getText(), true, FailureHandling.CONTINUE_ON_FAILURE)
